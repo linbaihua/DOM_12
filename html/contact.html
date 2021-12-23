@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>联系</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../style/basic.css">
+        <script src="../scripts/global.js"></script>
+        <script src="../scripts/contact.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <img src="../images/layout/logo.gif" alt="">
+        </div>
+
+        <div id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="live.html">Live</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <h1>contact the band</h1>
+            <!-- form 表单提交 -->
+            <form action="post" action="#">
+                <!-- fieldset 对表单中元素进行分组 -->
+                <fieldset>
+                    <p>
+                        <!-- label 简单表单 -->
+                        <!-- input 带有输入框和提交按钮得表单 -->
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" value="your name" class="required">
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" value="your email address" class="eamil required">
+                    </p>
+
+                    <p>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="45" rows="7" class="required">write your message here.</textarea>
+                    </p>
+
+                     <input type="submit" value="Send">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
